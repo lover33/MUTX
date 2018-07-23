@@ -46,7 +46,7 @@ if [[ $DOSETUP =~ "y" ]] ; then
   ## INSTALL
   rm MUTX_*.zip
   rm MUTX
-  wget https://github.com/Nikita8669/MUTX/releases/download/v1.0.0.1/MUTX-1.0.0.1-aarch64-linux-gnu.zip
+  wget https://github.com/Nikita8669/MUTX/releases/download/v1.0.0.1/MUTX-1.0.0.1-x86_64-pc-linux-gnu.zip
   unzip MUTX* -d mutx
   sudo chmod 755 mutx*/mutx*
   sudo mv mutx*/mutx* /usr/bin
