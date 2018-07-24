@@ -5355,9 +5355,9 @@ int IsWalletUpdated()
 
     if (!masternodeSync.IsSynced()) {
 		return 1;                                // Wallet is syncing sporks values
-    } else if (CurrentVersion == CurrentVersion) {
+    } else if (CurrentVersion == NetworkVersion) {
 		return 2;                                // Local protocal equals to network protocol, wallet is up to date
-    } else if (CurrentVersion != CurrentVersion) {
+    } else if (CurrentVersion != NetworkVersion) {
         return 3;                                // Mandatory Update detected on the network
     } else {
         return 1;								 // Should never happen
